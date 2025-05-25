@@ -18,6 +18,8 @@ Bu bot Discord.js v14 kullanılarak geliştirilmiş bir ticket (destek talebi) b
 
 **Yardım**
 ![yardım](./zyp/ozel-oda.png)  
+
+
 **top**
 ![top](./zyp/özel-oda.png)  
 
