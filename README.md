@@ -58,6 +58,6 @@ Botla ilgili soru ve destek için:
 #### 💡 Önerilerim var
 Discord sunucumuzda **#öneriler** kanalını kullanın
 
-[⬆ Yukarı dön](#-ozel-oda)
+[⬆ Yukarı dön](#ozel-oda)
 ---
 
