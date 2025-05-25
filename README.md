@@ -1,63 +1,60 @@
-# 🎮 Oyun-Rol Botu  
+# Discord.js v14 Ticket Bot
 
-Oyun tutkunları için tasarlanmış, Discord sunucularınıza eğlence ve düzen katan **Oyun-Rol Botu**! Belirttiğiniz oyunları oynayan üyelerinize otomatik olarak roller atar ve oyunu oynamayı bıraktıklarında rollerini geri alır. 🌟  
+Bu bot Discord.js v14 kullanılarak geliştirilmiş bir ticket (destek talebi) botudur. Slash komutlar kullanarak kurulum yapabilir ve talep sistemini yönetebilirsiniz.
 
----
+## Özellikler
 
-## 🚀 Özellikler  
+- `/setup` komutu ile log kanalı ve yetkili rolü belirleme
+- `/ticket` komutu ile istediğiniz kanala talep oluşturma mesajı gönderme
+- Ticket oluşturma, yönetme ve kapatma sistemi
+- Talep kapatıldığında transcript oluşturma
+- Sesli destek kanalı oluşturma
+- Taleplere üye ekleme özelliği
+- Aktif talep sayısını gösteren dinamik kategori adı
 
-### 🎲 **Oyun Ekleme**  
-- **Komut**: `/ekle [oyun adı] @rol`  
-  - Belirttiğiniz oyun adını ve rolü ekler. Bu oyunu oynayan kullanıcılara otomatik olarak rol atanır.  
 
-![Oyun Ekleme](./image/ekle.png)  
 
----
+## Komutlar Görselleriyle
 
-### 📜 **Listeleme ve Yönetim**  
-- **Komut**: `/list`  
-  - Eklenen tüm oyun adlarını ve rollerini gösterir.  
-  - **Butonlu Silme**: Oyun-rol eşleştirmelerini kolayca silebilirsiniz.  
-  - **Select Menüsü**: Listeyi daha kolay yönetmek için seçilebilir menü desteği.  
+**Yardım**
+![yardım](./zyp/ozel-oda.png)  
+**top**
+![top](./zyp/özel-oda.png)  
 
-![Listeleme](./image/list.png)  
+**Panel**
 
----
+![yardım](./zyp/ozel-oda2.png)  
 
-### 🖊️ **Loglama**  
-- **Komut**: `/log [#kanal]`  
-  - Bir oyuncuya rol atandığında veya alındığında belirttiğiniz kanala bildirim gönderir.  
-    - "🎉 **Rol verdim**: [oyuncu] → [rol]"  
-    - "💔 **Rol aldım**: [oyuncu] → [rol]"  
+## Kurulum
 
-![Loglama](./image/log.png)  
+1. `config.json` dosyasını düzenleyin:
+   - `token`: Discord bot token'ınızı ekleyin
+   - `clientId`: Bot kullanıcı ID'nizi ekleyin
 
----
+2. Bağımlılıkları yükleyin:
+   ```
+   npm install
+   ```
 
-## 🛠️ Kurulum  
+3. Slash komutları kaydedin:
+   ```
+   node deploy-commands.js
+   ```
 
-### 🧾 **Gereksinimler**  
-- [Node.js](https://nodejs.org) (v16 ve üzeri)  
+4. Botu başlatın:
+   ```
+   node index.js
+   ```
 
----
+## Kullanım
 
-## 📞 İletişim & Destek
-[![Discord](https://img.shields.io/badge/ZYPHERİS-DİSCORD-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/users/773582512647569409)
-### 🌍 **Bize Ulaşın**
-Botla ilgili soru ve destek için:
+1. `/setup` komutunu kullanarak log kanalı ve yetkili rolünü ayarlayın
+2. `/ticket` komutunu kullanarak ticket mesajının gönderileceği kanalı seçin
+3. Kullanıcılar "Destek talebi oluştur" butonuna tıklayarak ticket oluşturabilirler
+4. Destek talebi mesajını istediğiniz gibi değiştirebilirsiniz Lütfen inceleyin
 
-[![Discord](https://img.shields.io/badge/DISCORD-SUNUCUMUZ-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/sxWz2fayFa)
-[![Zypheris instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/ilwixi7)
+## Teknik Detaylar
 
-### ❓ **SSS**
-#### 🤖 Bot çalışmıyor?
-- Node.js v16+ kontrol edin
-- `npm install` yapmayı unutmayın
-- `node index.js` node . ile çalışmıyorsa yapın
-
-#### 💡 Önerilerim var
-Discord sunucumuzda **#öneriler** kanalını kullanın
-
-[⬆ Yukarı dön](#-ozel-oda)
----
-
+- Discord.js v14 kullanılmıştır
+- croxydb veritabanı kullanılmıştır
+- discord-html-transcripts paketi ile Log kaydı yapılmıştır
