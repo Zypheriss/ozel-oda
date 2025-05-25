@@ -1,11 +1,11 @@
-# Discord.js v14 Ticket Bot
+# Discord.js v14 Özel oda bot
 
-Bu bot Discord.js v14 kullanılarak geliştirilmiş bir ticket (destek talebi) botudur. Slash komutlar kullanarak kurulum yapabilir ve talep sistemini yönetebilirsiniz.
+Bu bot Discord.js v14 kullanılarak geliştirilmiş bir özel oda ( private room ) botudur
 
 ## Özellikler
 
-- `/setup` komutu ile log kanalı ve yetkili rolü belirleme
-- `/ticket` komutu ile istediğiniz kanala talep oluşturma mesajı gönderme
+- `/setup` komutu ile ses kanal ve kategoriyi kurarsınız
+- `/top` komutu ile en çok seste aktif duranları listelersiniz
 - kendinize özel kanal oluşturma ve yönetme
 - panel ile yönetimi kolaylıkla sağlama
 - top list görme
