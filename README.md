@@ -34,9 +34,9 @@ Bu bot Discord.js v14 kullanılarak geliştirilmiş bir özel oda ( private room
 
 ## Kullanım
 
-1. `/setup` komutunu kullanarak log kanalı ve yetkili rolünü ayarlayın
-2. `/ticket` komutunu kullanarak ticket mesajının gönderileceği kanalı seçin
-3. Kullanıcılar "Destek talebi oluştur!" butonuna tıklayarak ticket oluşturabilirler
+1. `/setup` komutu kullanarak otomatik kategori ve özel oda kanalını ayarlayın
+2. `/top` komutunu kullanarak en çok seste duranları listeler özel oda da onları görebilirsiniz
+3. Kullanıcılar kullanıcılar açılan sese girdikleri zaman kendisine ait bir özel oda oluşturur bot klasik özel oda
 
 # Botun Örnek görselleri
 
